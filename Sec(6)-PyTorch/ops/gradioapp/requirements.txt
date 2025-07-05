@@ -1,4 +1,4 @@
-gradio
+gradio[client]==4.44.1
 torch 
 torchvision
 opencv-python

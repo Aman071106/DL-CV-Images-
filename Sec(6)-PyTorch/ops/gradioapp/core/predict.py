@@ -8,6 +8,8 @@ from PIL import Image
 from torchvision import transforms
 import torch.nn as nn
 import cv2
+import requests
+import io
 # CNN architecture
 class CNNclassifier(nn.Module):
     def __init__(self,input_dim,num_classes):
@@ -84,7 +86,12 @@ class ImageClassifier:
   def __init__(self,model_path,class_dict=None):
     self.device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     self.model=CNNclassifier(128,3).to(self.device)
-    self.model.load_state_dict(torch.load(model_path))
+    # Load model weights from Hugging Face
+    url = "https://huggingface.co/deadlyharbor07/cnn_classifier/resolve/main/cnn_model.pth"
+    response = requests.get(url)
+    buffer = io.BytesIO(response.content)  # Make it seekable
+    state_dict = torch.load(buffer, map_location=self.device)
+    self.model.load_state_dict(state_dict)
     self.model.eval()
     if class_dict is None:
         self.class_dict={0: 'Cat', 1: 'Dog', 2: 'person'}
