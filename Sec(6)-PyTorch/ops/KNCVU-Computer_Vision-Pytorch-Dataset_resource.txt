@@ -1,0 +1,19 @@
+KNCVU - Computer Vision 
+
+Module - Pytorch
+Dataset link : https://drive.google.com/file/d/1G9H2W0R6JLYYBXyHNM_kAcBufUJr4Qsy/view?usp=sharing
+
+Lectures Used This Dataset : 
+- Defining custom Image Dataset loader and usage
+- CNN Training Using a Custom Dataset
+
+
+
+Note:
+
+Practiced on colab as data is large so memory will  increase on laptop
+
+Extracted link:
+https://drive.google.com/drive/u/0/folders/1sF_Q7-x3aGjY_xYvsWYJj4QI9bjRkZt_
+
+Also learnt gpu usage

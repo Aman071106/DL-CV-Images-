@@ -1,0 +1,4 @@
+here: ../ops/015.....
+google colab:https://colab.research.google.com/drive/16BU4aL_mGSxUBQHmyK9BO5xYjJ5aB2M8#scrollTo=rAcCS_-48Blj
+
+vdo:https://www.udemy.com/course/complete-computer-vision-bootcamp-with-pytoch-tensorflow/learn/lecture/49093895#overview   
