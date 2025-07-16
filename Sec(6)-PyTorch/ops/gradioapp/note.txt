@@ -1,0 +1,16 @@
+//Gradio app for deployment on hugging face space
+
+The app.py contains how to implement gradio app inference backend
+
+
+1. Create app.py in root and test it with simple dummy function to predict
+2. Create a core folder in root and make it a python module and add predict backend to it
+3. Integrate the core with app
+
+note: in the requirements.txt file don't write cuda or urls because we need to deploy it
+
+The default torch wheel includes GPU support when used in CUDA-enabled environments.
+
+When you write just torch in requirements.txt, it downloads a version that can detect and use GPU — if one is available.
+
+PyTorch will link itself to the system CUDA runtime already present in the Hugging Face container.

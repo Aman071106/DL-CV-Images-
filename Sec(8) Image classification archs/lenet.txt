@@ -1,0 +1,5 @@
+//main learning
+is receptive field increases and image size will decreases always until high padding used.
+And overall we gone through entire feature map and at last remain 1 *1 with 120 featuresc:\Users\aman0\Downloads\LeNet5+with+MNIST+Keras.ipynb c:\Users\aman0\Downloads\LeNet5+Pytorch.ipynb
+
+//the last conv layer in lenet is actually considered to be flattening layer as 1*1 cmes and also it is called lenet-5 because 1-4 wwere noot widely accepted and it is the 5th version of lenet.

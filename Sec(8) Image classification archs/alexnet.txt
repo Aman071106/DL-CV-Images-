@@ -1,0 +1,10 @@
+//as we come across deeper conv layers we increase the filters for mmore complex features and receptive field.
+
+//local response normalization is now deprecated and now better technique has come which is batch normalization
+:
+Faster convergence
+boost generalization
+
+
+//dataset link:
+https://drive.google.com/file/d/11G6oanefhSec9rdYlF03-YeuYcvoQ8Vh/view

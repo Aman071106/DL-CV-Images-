@@ -1,0 +1,36 @@
+//From sec8 to rest we will look upon several available :
+- Architectures
+- Pre trained modesl
+- Data sets
+- competitions
+- problem identification
+- newerr loss functions and metrics etc 
+
+
+
+//there are many other models,datasets and tech stack,parameters as discussed in courses. But here we will realize how to explore or what else cann be there.
+These things arrise from large competitions etc.
+
+
+
+//in tf and keras we should use there transformers or utils by seeing from doc or elsewhere instead of sklearn
+
+input shape
+
+(batch_size, height, width, channels)   # For TensorFlow
+(batch_size, channels, height, width)   # For PyTorch
+
+
+
+
+
+
+
+
+Overall--
+#receptive field
+#as we go deeper we can do increase in no of kernels for extracting high level features
+#stride generally 1 or 2
+#Normalization
+#Skip connections
+# Parallerly multiple layers than concatenate

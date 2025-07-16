@@ -1,0 +1,32 @@
+smaller receptive fields are efficeient but finally the rf must be at least == img size
+
+
+📌 Why does VGG suffer from vanishing gradients?
+Very Deep Network:
+
+VGG-16 has 16 layers with weights; VGG-19 has 19.
+
+As gradients are backpropagated through many layers, they can shrink exponentially, especially if activations or weights are small.
+
+No Skip Connections:
+
+Unlike ResNet, VGG does not have residual (skip) connections to help gradients flow backward.
+
+This makes it harder for the network to learn as depth increases.
+
+ReLU helps, but only partially:
+
+VGG uses ReLU activations, which alleviate vanishing gradients better than sigmoid/tanh, but:
+
+Dying ReLU and depth still cause problems.
+
+Some gradients can still shrink too much in early layers.
+
+Large Fully Connected Layers:
+
+VGG has two 4096-unit FC layers, which add a lot of parameters and can affect stability during training.
+
+📈 How was it trained despite vanishing gradients?
+VGG was trained using carefully tuned learning rates, initialization, and lots of computational resources.
+
+It also relied on pretraining on ImageNet and gradual training with lower depths first.

@@ -1,0 +1,18 @@
+This section consists how images get built and what cnn see and how to visualize them along with some calculations.
+
+Blog link for visualizing tool:
+https://adamharley.com/nn_vis/
+
+cnn explainer:
+https://poloclub.github.io/cnn-explainer/
+
+tensorspace link:
+https://tensorspace.org/html/playground/index.html
+
+
+
+This section also contains the hyperparamters selction method like kerenel size,number of channels ,stride,padding
+
+
+
+Higher receptive fields are good and at least rerqruired after final convolution  == img size(close to may not be exactly equal) and 
