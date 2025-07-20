@@ -1,0 +1,6 @@
+| Dice Loss                                         | CCE                                    |
+| ------------------------------------------------- | -------------------------------------- |
+| Good for region overlap & class imbalance         | Good for pixel-wise class precision    |
+| Handles small/rare classes well                   | Provides strong early training signals |
+| Can struggle with softmax calibration             | Encourages sharp class probabilities   |
+| Works poorly alone in noisy or multi-class setups | Complements Dice's weaknesses          |

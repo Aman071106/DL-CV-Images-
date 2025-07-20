@@ -13,3 +13,4 @@ pillow
 # Gradio dependencies
 gradio
 urllib
+ultralytics

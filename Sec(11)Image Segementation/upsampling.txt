@@ -1,0 +1,1 @@
+->increase resolution -- good for image segmentation and image generation

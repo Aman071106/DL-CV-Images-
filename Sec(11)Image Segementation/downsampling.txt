@@ -1,0 +1,11 @@
+= it is same as pooling and its function is to prevent overfitting and reducing noise by reducing resolution in cnns
+
+note: conv layers also do downsampling provided ((n-f+2p)/s +1)!=n
+
+
+no of channels is the no of features
+and 
+w*h is resolution
+
+note:(only for feature reduction)
+    there for feature reduction or increase we should use 1*1 convolution .This will ensure that resolution will not change.

@@ -1,0 +1,22 @@
+{
+  "images": [
+    {"id": 1, "file_name": "image1.jpg", "width": 640, "height": 480},
+    {"id": 2, "file_name": "image2.jpg", "width": 800, "height": 600},
+    {"id": 3, "file_name": "image3.jpg", "width": 1024, "height": 768},
+    {"id": 4, "file_name": "image4.jpg", "width": 640, "height": 480},
+    {"id": 5, "file_name": "image5.jpg", "width": 1280, "height": 720}
+  ],
+  "annotations": [
+    {"image_id": 1, "bbox": [100, 150, 50, 60], "category_id": 1},
+    {"image_id": 1, "bbox": [300, 200, 120, 150], "category_id": 2},
+    {"image_id": 2, "bbox": [50, 60, 200, 300], "category_id": 1},
+    {"image_id": 3, "bbox": [400, 350, 100, 80], "category_id": 3},
+    {"image_id": 4, "bbox": [200, 100, 60, 90], "category_id": 2},
+    {"image_id": 5, "bbox": [600, 400, 100, 200], "category_id": 1}
+  ],
+  "categories": [
+    {"id": 1, "name": "person"},
+    {"id": 2, "name": "dog"},
+    {"id": 3, "name": "car"}
+  ]
+}
