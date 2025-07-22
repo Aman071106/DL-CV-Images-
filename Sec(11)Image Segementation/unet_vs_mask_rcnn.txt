@@ -1,0 +1,70 @@
+U-Net and Mask R-CNN are both popular models for image segmentation, but they differ significantly in architecture, use cases, and capabilities.
+
+🔍 Quick Summary
+Feature	U-Net	Mask R-CNN
+Task	Semantic segmentation	Instance segmentation
+Output	Class label per pixel (no object distinction)	Pixel-wise masks for each detected object
+Architecture	Encoder-decoder with skip connections	Backbone + RPN + ROIAlign + segmentation head
+Use case	Medical imaging, satellite images	COCO-style object segmentation (multi-object)
+Object Separation	No (merges overlapping objects)	Yes (separates individual object masks)
+
+🔬 1. What is U-Net?
+Type: Semantic Segmentation
+
+Architecture:
+
+Encoder (downsampling via conv + pooling)
+
+Decoder (upsampling via transposed conv)
+
+Skip connections from encoder to decoder
+
+Strength:
+
+Works well on small datasets
+
+Accurate pixel-wise prediction
+
+Simple and fast to train
+
+Example use-cases:
+
+Medical imaging (e.g., tumor segmentation)
+
+Agricultural segmentation
+
+Any task where you want per-pixel classification without separating individual objects
+
+🕸️ 2. What is Mask R-CNN?
+Type: Instance Segmentation (combines object detection + segmentation)
+
+Architecture:
+
+Backbone: CNN (e.g., ResNet + FPN)
+
+Region Proposal Network (RPN): Suggests candidate object regions
+
+ROIAlign: Extracts features for each region
+
+Heads: Predict bounding box, class, and binary mask for each instance
+
+Strength:
+
+Detects and segments multiple objects
+
+Each object gets a separate mask
+
+Example use-cases:
+
+Detecting and segmenting multiple people, cars, animals, etc.
+
+COCO-style datasets
+
+Tasks needing both object detection and segmentation
+
+🎯 When to Use What?
+Problem Type	Use This Model
+Segmenting lungs, tumors, or organs	U-Net
+Segmenting 10 different overlapping cars	Mask R-CNN
+Pixel-wise land cover segmentation	U-Net
+Detecting and segmenting every person in image	Mask R-CNN
