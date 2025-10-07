@@ -134,7 +134,8 @@ wget https://pjreddie.com/media/files/imagenet.weights
 
 **Step 4: Apply NMS**
 example
-![Non max Suppression](nms.png)
+![Non max Suppression](https://github.com/Aman071106/DL-CV-Images-/blob/main/nms.png)
+
 
 * Remove overlapping boxes with IoU > 0.5
 
